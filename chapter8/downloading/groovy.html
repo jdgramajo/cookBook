@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="description" content="Groovy Wiki"/>
+    <meta name="keywords"
+          content="Groovy, Groovy Programming, Dynamic Language, Scripting language, Closure, Java, Domain-Specific Languages, JVM, Java platform, static typing, static type checking, invoke dynamic, JDK"/>
+    <meta name="author" content="Codehaus Groovy Community"/>
+
+    <link href="http://groovy.codehaus.org/style/bootstrap-1.2.0.min.css" type="text/css" rel="stylesheet"/>
+    <link href="http://groovy.codehaus.org/style/BreadCrumb.css" type="text/css" rel="stylesheet"/>
+    <link href="http://groovy.codehaus.org/style/custom.css" type="text/css" rel="stylesheet"/>
+    <link href="http://groovy.codehaus.org/style/idea.css" type="text/css" rel="stylesheet"/>
+
+    <link href="/favicon.ico" type="image/x-ico" rel="icon"/>
+    
+    <link href="https://plus.google.com/101432359761228268146/" rel="publisher" />
+
+    <link rel="alternate" type="application/rss+xml" title="Site updates"
+          href="http://docs.codehaus.org/spaces/rss.action?key=GROOVY&amp;newPages=false"/>
+    <link rel="alternate" type="application/rss+xml" title="News feed"
+          href="http://docs.codehaus.org/spaces/blogrss.action?key=GROOVY"/>
+
+    <title>Groovy - Home</title>
+
+    <!--
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js'></script>
+    -->
+    <script type='text/javascript' src='http://groovy.codehaus.org/js/jquery-1.7.2.min.js'></script>
+
+    <script type='text/javascript' src='http://groovy.codehaus.org/js/jquery.jBreadCrumb.1.1.js'></script>
+
+    <script type='text/javascript' src='http://groovy.codehaus.org/js/keymaster.min.js'></script>
+    <script type='text/javascript' src='http://groovy.codehaus.org/js/pageLookup.js'></script>
+
+    <script type='text/javascript' src='http://groovy.codehaus.org/js/highlight.js'></script>
+    <script type='text/javascript' src='http://groovy.codehaus.org/js/groovy.js'></script>
+
+    <script src="//www.google.com/jsapi" type="text/javascript"></script>
+    <script type="text/javascript">
+        google.load('search', '1');
+        google.setOnLoadCallback(
+                function() {
+                    var customSearchControl = new google.search.CustomSearchControl('013939896723962546743:tjolwat4pbq');
+                    customSearchControl.enableAds('5267633279208525');
+                    customSearchControl.setSearchStartingCallback(this, function() {
+                        document.getElementById('initial-page-content').style.display = 'none';
+                        document.getElementById('search-area').style.display = 'block';
+                    });
+                    google.search.Csedr.addOverride("mysite_");
+                    var drawOptions = new google.search.DrawOptions();
+                    drawOptions.setInput(document.getElementById('search-input-field'));
+                    customSearchControl.draw('cse', drawOptions);
+                },
+                true);
+    </script>
+    <link href="http://groovy.codehaus.org/style/search.css" type="text/css" rel="stylesheet"/>
+</head>
+
+<body id="Home">
+
+<div id="page">
+
+<div id="pageLookup" class="modal">
+    <div class="modal-header">
+        <h3>Quick page lookup</h3>
+        <a href="javascript:void(0)" class="close">&times;</a>
+    </div>
+    <div class="modal-body">
+        <input class="xlarge" id="quickSearch" name="quickSearch" size="40" type="text"/>
+
+        <div id="searchResults">
+            <ul>
+            </ul>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <a href="javascript:void(0)" id="okButton" class="btn primary">Go!</a>
+    </div>
+</div>
+
+<div id="welcome">
+    <div class="container">
+        <div class="row">
+            <div class="span4 columns">
+                <img src="http://groovy.codehaus.org/images/groovy-logo-medium.png" width="100%" alt=""/>
+            </div>
+            <div class="span8 columns" id="moto">
+                A dynamic language <br/>
+                for the Java platform
+            </div>
+            <div class="span4 columns">
+                <div id="download-box">
+                    <table>
+                        <tr>
+                            <td>
+                                <a href="Download?nc">
+                                    <img src="http://groovy.codehaus.org/download/attachments/1866/download-icon.png?version=1 modificationDate=1197220874643"/>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="Download?nc">
+                                    Download <br/> Groovy&nbsp;2.4
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="row topbar">
+        <div class="fill">
+            <div class="container">
+                <h3><a href="/">★ Groovy</a></h3>
+                <ul class="nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Documentation</a>
+                        <ul class="dropdown-menu">
+                            <li class=""><a href="Documentation">Documentation
+                                Portal</a></li>
+                            <li class="divider"></li>
+                            <li><a href="http://docs.groovy-lang.org/latest/html/documentation">New Documentation</a></li>
+                            <li class=""><a href="Installing+Groovy">Installing Groovy</a></li>
+                            <li class=""><a href="Getting+Started+Guide">Getting Started</a></li>
+                            <li class="divider"></li>
+                            <li class=""><a href="User+Guide">User Guide</a></li>
+                            <li class=""><a href="Testing+Guide">Testing Guide</a></li>
+                            <li class=""><a href="Advanced+Usage+Guide">Advanced Usage Guide</a></li>
+                            <li class=""><a href="Developer+Guide">Developer Guide</a></li>
+                            <li class="divider"></li>
+                            <li class=""><a href="Cookbook+Examples">Cookbook Examples</a></li>
+                            <li class="divider"></li>
+                            <li><a href="/gapi/">Groovy APIs</a></li>
+                            <li><a href="/groovy-jdk/">Groovy Development Kit</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Community &amp; Support</a>
+                        <ul class="dropdown-menu">
+                            <li class=""><a href="Community+and+Support">Welcome!</a></li>
+                            <li class="divider"></li>
+                            <li class=""><a href="Git">Groovy Sources</a></li>
+                            <li class=""><a href="Mailing+Lists">Mailing Lists</a></li>
+                            <li><a href="http://jira.codehaus.org/secure/BrowseProject.jspa?id=10242">Bug Tracker</a></li>
+                            <li><a href="http://docs.codehaus.org/display/GROOVY/Home">Wiki</a></li>
+                            <li class="divider"></li>
+                            <li class=""><a href="Contributing">Contributing</a></li>
+                            <li class="divider"></li>
+                            <li class=""><a href="Related+Projects">Related Projects</a></li>
+                            <li class=""><a href="Modules">Modules</a></li>
+                            <li class="divider"></li>
+                            <li class=""><a href="User+Groups">User Groups</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">IDE Support</a>
+                        <ul class="dropdown-menu">
+                            <li class=""><a href="Eclipse+Plugin">Eclipse Plugin</a></li>
+                            <li class=""><a href="IntelliJ+IDEA+Plugin+by+JetBrains">IntelliJ IDEA Plugin</a></li>
+                            <li class="divider"></li>
+                            <li class=""><a href="IDE+Support">Other IDE plugins</a></li>
+                        </ul>
+                    </li>
+                    <li class=""><a href="Download">Download</a></li>
+                    <li class=""><a href="Project+Information">About</a></li>
+                    <li>
+                        <div class='nav secondary-nav' style="top: 5px; left: 101px">
+                            <input type="text" id='search-input-field' style="width: 198px;" placeholder="Search"/>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+
+        <div class="span12 columns">
+
+            <div id="initial-page-content">
+
+                
+                <h1 class="mainPageTitle">
+                    Home
+
+                <span style="float: right">
+                    <a title="Add comment to Wiki"
+                       href="http://docs.codehaus.org/display/GROOVY/Home?showComments=true showCommentArea=true#addcomment"><img
+                            src="http://docs.codehaus.org/download/attachments/1866/discuss.jpg" class="print"
+                            alt="Add comment to Wiki"/></a>
+                    <a title="View in Wiki"
+                       href="http://docs.codehaus.org/display/GROOVY/Home"><img
+                            src="http://docs.codehaus.org/download/attachments/1866/view.jpg" class="print"
+                            alt="View in Wiki"/></a>
+                    <a title="Edit Wiki page"
+                       href="http://docs.codehaus.org/pages/editpage.action?spaceKey=GROOVY&amp;title=Home"><img
+                            src="http://docs.codehaus.org/download/attachments/1866/edit.jpg" class="print"
+                            alt="Edit Wiki page"/></a>
+                    <a title="Printable Version" href="/Home?print=1"><img
+                            src="http://docs.codehaus.org/download/attachments/1866/print.jpg" class="print"
+                            alt="Printable Version"/></a>
+                </span>
+                </h1>
+
+                
+                <div>
+                    <div class="section_1"><h1 id="Home-Youarelookingattheoldwebsite."><span style="color: rgb(255,0,0);"><strong>You are looking at the old website. </strong></span></h1></div><div class="section_1"><h1 id="Home-Makesureyouvisittohttp://groovy-lang.orgtocheckthelatestnews,documentationanddownloads."><span style="color: rgb(255,0,0);"><strong>Make sure you visit to <span style="color: rgb(0,0,0);"><a href="http://groovy-lang.org" class="external-link"><span style="color: rgb(0,0,0);">http://groovy-lang.org</span></a></span> to check the latest news, documentation and downloads.</strong></span></h1><p>&nbsp;</p><div id="definition">
+<div class="section_3"><h3><a name="Home-Groovy..."></a>Groovy...</h3>
+
+<ul>
+	<li>is an agile and <strong>dynamic language</strong> for the <strong>Java Virtual Machine</strong></li>
+	<li>builds upon the strengths of Java but has <strong>additional power features</strong> inspired by languages like Python, Ruby and Smalltalk</li>
+	<li>makes <strong>modern programming features</strong> available to Java developers with <strong>almost-zero learning curve</strong></li>
+	<li>provides the ability to <strong>statically type check</strong> and <strong>statically compile</strong> your code for robustness and performance</li>
+	<li>supports <strong>Domain-Specific Languages</strong> and other compact syntax so your code becomes <strong>easy to read and maintain</strong></li>
+	<li>makes writing shell and build scripts easy with its <strong>powerful processing primitives</strong>, OO abilities and an Ant DSL</li>
+	<li>increases developer productivity by <strong>reducing scaffolding code</strong> when developing web, GUI, database or console applications</li>
+	<li><strong>simplifies testing</strong> by supporting unit testing and mocking out-of-the-box</li>
+	<li>seamlessly <strong>integrates with all existing Java classes and libraries</strong></li>
+	<li>compiles straight to Java bytecode so you can use it anywhere you can use Java</li>
+</ul>
+</div></div><div class="section_3"><h3 id="Home-ExperienceGroovy2.4">Experience Groovy 2.4</h3><div class="table-wrap"><table class="confluenceTable"><tbody><tr><td class="confluenceTd"><p><a href="/Download"><img class="confluence-embedded-image" hspace="4" vspace="2" src="/download/attachments/1866/download-icon.png?version=1&amp;modificationDate=1197220874643&amp;api=v2" data-image-src="/download/attachments/1866/download-icon.png?version=1&amp;modificationDate=1197220874643&amp;api=v2" title="download-icon.png [Download arrow picture]"></img></a></p></td><td class="confluenceTd"><p><strong>Groovy 2.4</strong> is the latest <strong>major</strong> and <strong>stable version</strong> of the popular alternative language for the JVM.</p><p>In this <a href="http://www.groovy-lang.org/releasenotes/groovy-2.4.html" class="external-link">new release</a>, Groovy features:</p><ul><li><span style="color: rgb(0,0,0);">support for <strong>building Android applications in full Groovy</strong>!</span></li><li><span style="color: rgb(0,0,0);"><strong>performance improvements</strong> and <strong>reduced bytecode</strong></span></li><li><span style="color: rgb(0,0,0);">traits @SelfType annotation to <strong>restrict traits application</strong></span></li><li><span style="color: rgb(0,0,0);">many GDK improvements</span></li><li><span style="color: rgb(0,0,0);">updated AST transformations</span></li><li><span style="color: rgb(0,0,0);">Groovysh enhancements</span></li></ul></td></tr></tbody></table></div>    <div class="aui-message hint shadowed information-macro">
+                    <p class="title">Deprecating the wiki</p>
+                            <span class="aui-icon icon-hint">Icon</span>
+                <div class="message-content">
+                            <p><strong>We are slowly migrating documentation from the wiki to a new website. It is recommanded that you <a href="http://beta.groovy-lang.org/docs/latest/html/documentation/" class="external-link">read the new documentation first</a></strong><strong>, and fall back to the wiki if you can't find what you were looking for.</strong></p>
+                    </div>
+    </div>
+<p>&nbsp;</p><p>&nbsp;</p><div class="sectionColumnWrapper"><div class="sectionMacro"><div class="sectionMacroRow"><div class="columnMacro" style="width:15%;min-width:15%;max-width:15%;"><p><br class="atl-forced-newline"></br> "Groovy is like a super version of Java. It can leverage Java's enterprise capabilities but also has cool productivity features like closures, builders and dynamic typing. If you are a developer, tester or script guru, you have to love Groovy."</p><div class="imageHolder"><img class="confluence-embedded-image" src="/download/attachments/1866/groovydukemed.jpg?version=1&amp;modificationDate=1176732937408&amp;api=v2" data-image-src="/download/attachments/1866/groovydukemed.jpg?version=1&amp;modificationDate=1176732937408&amp;api=v2" title="groovydukemed.jpg"></img></div><p>&nbsp;</p></div><div class="columnMacro" style="width:85%;min-width:85%;max-width:85%;"><div class="section_2"><h2 id="Home-Samples">Samples</h2><p>A simple hello world script:</p><div class="preformatted panel" style="border-width: 1px;"><div class="preformattedContent panelContent">
+<pre>def name='World'; println "Hello $name!"</pre>
+</div></div><p>A more sophisticated version using Object Orientation:</p><div class="preformatted panel" style="border-width: 1px;"><div class="preformattedContent panelContent">
+<pre>class Greet {
+  def name
+  Greet(who) { name = who[0].toUpperCase() +
+                      who[1..-1] }
+  def salute() { println "Hello $name!" }
+}
+
+g = new Greet('world')  // create object
+g.salute()               // output "Hello World!"</pre>
+</div></div><p>Leveraging existing Java libraries:</p><div class="preformatted panel" style="border-width: 1px;"><div class="preformattedContent panelContent">
+<pre>import static org.apache.commons.lang.WordUtils.*
+
+class Greeter extends Greet {
+  Greeter(who) { name = capitalize(who) }
+}
+
+new Greeter('world').salute()</pre>
+</div></div><p>On the command line:</p><div class="preformatted panel" style="border-width: 1px;"><div class="preformattedContent panelContent">
+<pre>groovy -e "println 'Hello ' + args[0]" World
+</pre>
+</div></div></div></div></div></div></div></div></div><div class="section_1"><h1 id="Home-Partners">Partners</h1><div class="table-wrap"><table class="confluenceTable"><tbody><tr><th class="confluenceTh"><p><a href="https://bintray.com/groovy/maven/groovy/view?source=watch" class="external-link"><img class="confluence-embedded-image confluence-external-resource" alt="Get automatic notifications about Groovy versions" src="https://www.bintray.com/docs/images/bintray_badge_color.png" data-image-src="https://www.bintray.com/docs/images/bintray_badge_color.png"></img></a></p><p><a href="https://bintray.com/" class="external-link">Bintray</a> from <a href="http://www.jfrog.com/" class="external-link">JFrog</a> hosts our downloads and <a href="https://oss.jfrog.org/" class="external-link">oss.jfrog.org</a> our <a href="https://oss.jfrog.org/oss-snapshot-local/org/codehaus/groovy/" class="external-link">snapshots</a></p></th><th class="confluenceTh"><p><a href="http://www.jetbrains.com/" class="external-link"><img class="confluence-embedded-image" alt="JetBrains" src="/download/attachments/1866/logo_jetbrains.png?version=1&amp;modificationDate=1396511986798&amp;api=v2" data-image-src="/download/attachments/1866/logo_jetbrains.png?version=1&amp;modificationDate=1396511986798&amp;api=v2" title="JetBrains"></img></a></p><p><a href="http://www.jetbrains.com/" class="external-link">JetBrains</a> give us licenses for <a href="http://www.jetbrains.com/teamcity/" class="external-link">TeamCity</a>, our <a href="http://ci.groovy-lang.org/" class="external-link">CI server</a>, and <a href="http://www.jetbrains.com/idea/" class="external-link">IntelliJ IDEA</a></p></th></tr></tbody></table></div><p>&nbsp;</p></div><div class="section_1"><h1 id="Home-Latestnews[more]">Latest news <a href="/News">[more]</a></h1><p>    
+
+    
+        
+<div class="blog-post-listing">
+            <div class="logo-heading-block">
+            <span class="logoBlock">
+                <a class="userLogoLink" data-username="glaforge" href="    /display/~glaforge ">
+               <img class="userLogo logo" src="/download/attachments/2826/glaforge.jpg?version=1&amp;modificationDate=1219163344547&amp;api=v2" alt="User icon: glaforge" title="glaforge"></img>
+           </a>            </span>
+            <span class="blogHeading">
+                <a class="blogHeading" href="http://docs.codehaus.org/display/GROOVY/2015/02/18/Joint+releases+of+Groovy+2.4.1+and+Groovy+2.3.10">Joint releases of Groovy 2.4.1 and Groovy 2.3.10</a>
+                <div class="page-metadata not-personal">    <a href="    /display/~glaforge " class="url fn confluence-userlink" data-username="glaforge">Guillaume Laforge</a> posted on Feb 18, 2015</div>
+            </span>
+        </div>
+    
+    <div class="wiki-content">
+        <p><span style="color: rgb(0,0,0);">The Groovy development team is happy to announce the </span><span style="color: rgb(0,0,0);">joint releases of the Groovy 2.4.1 and Groovy 2.3.10</span><span style="color: rgb(0,0,0);"> of the Groovy programming language for the Java platform.</span></p><p><span style="color: rgb(0,0,0);">Both releases are bug fix releases, and while Groovy 2.4.1 is the latest official stable branch, we thought it might be helpful to some projects who are still on the 2.3.x line to get a final release for that branch. But going forward, the 2.3.x branch won&#8217;t see any upcoming release.</span></p><p><span style="color: rgb(0,0,0);">You can learn more about all the tickets closed by reading:</span></p><ul><li><p><span>the </span><a href="http://groovy-lang.org/changelogs/changelog-2.4.1.html" class="external-link"><span style="color: rgb(17,85,204);text-decoration: underline;">Groovy 2.4.1 changelog</span></a></p></li><li><p><span>the </span><span style="color: rgb(17,85,204);text-decoration: underline;"><a href="http://groovy-lang.org/changelogs/changelog-2.3.10.html" class="external-link">Groovy 2.3.10 changelog</a></span></p></li></ul><p><span style="color: rgb(0,0,0);">For reference, you can also read the </span><a href="http://groovy-lang.org/releasenotes/groovy-2.4.html" class="external-link"><span style="color: rgb(34,68,102);text-decoration: underline;">release notes of Groovy 2.4</span></a><span style="color: rgb(0,0,0);"> if you haven't had a chance to since the announcement.</span></p><p><span style="color: rgb(0,0,0);">Head over to the </span><a href="http://www.groovy-lang.org/download.html" class="external-link"><span style="color: rgb(17,85,204);text-decoration: underline;">download section of the new Groovy website</span></a><span style="color: rgb(0,0,0);"> to download the binary distribution, or update your dependencies accordingly with those new version numbers.</span></p><p><span style="color: rgb(0,0,0);">Thanks a lot for all those who contributed to this release!</span></p><div><span style="color: rgb(0,0,0);"><br></br></span></div>
+    </div>
+    
+        
+    </div>
+    </p></div>
+                </div>
+
+                <div class="ads">
+                    <p>&nbsp;</p>
+                    <script type="text/javascript"><!--
+                    google_ad_client = "pub-5267633279208525";
+                    google_ad_width = 468;
+                    google_ad_height = 60;
+                    google_ad_format = "468x60_as";
+                    //google_ad_channel = "7321085054"; //unity-top
+                    google_color_border = "3483A1";
+                    google_color_bg = "FFFFFF";
+                    google_color_link = "3483A1";
+                    google_color_url = "3483A1";
+                    google_color_text = "000000";
+                    //--></script>
+                    <script type="text/javascript"
+                            src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
+                    </script>
+                </div>
+
+            </div>
+
+            <div id="search-area">
+
+                    <div id="breadCrumbLinksSearch" class="breadCrumb module">
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/search.html">Search</a></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="mainPageTitle">Search</h1>
+
+                    <p>
+                        Results of your search request can come from various sources: the Groovy website itself,
+                        the JIRA issues, the API documentation, as well as a few other interesting Groovy-related blogs.
+                    </p>
+
+                    <div style="display:none">
+                        <div id="mysite_thumbnail">
+                            <div data-attr="0"
+                                 data-vars="{tn:Vars.thumbnail && thumbnail.src ? thumbnail : {src:Vars.document && document.thumbnailUrl}}">
+                                <div data-if="tn.src" class="gs-image-box gs-web-image-box">
+                                    <a class="gs-image"
+                                       data-attr="{href:url,target:google.search.Search.LINK_TARGET_SELF}">
+                                        <img class="gs-image" src="" data-attr="{src:tn.src, width:48, height: 48}"/>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="mysite_webResult">
+                            <div class="gs-webResult gs-result"
+                                 data-vars="{longUrl:function() { var i = unescapedUrl.indexOf(visibleUrl); return i < 1 ? visibleUrl : unescapedUrl.substring(i);}}">
+                                <table>
+                                    <tr>
+                                        <td valign="top">
+                                            <div data-if="Vars.richSnippet" data-attr="0"
+                                                 data-body="render('thumbnail',richSnippet,{url:unescapedUrl,target:google.search.Search.LINK_TARGET_SELF})"></div>
+                                        </td>
+                                        <td valign="top">
+                                            <div class="gs-title">
+                                                <a class="gs-title"
+                                                   data-attr="{href:unescapedUrl,target:google.search.Search.LINK_TARGET_SELF}"
+                                                   data-body="html(title)"></a>
+                                            </div>
+                                            <div class="gs-snippet" data-body="html(content)"></div>
+                                            <div class="gs-visibleUrl gs-visibleUrl-short" data-body="longUrl()"></div>
+                                            <div style="color:#676767"
+                                                 data-if="Vars.richSnippet && Vars.richSnippet.document">
+                                                <img data-attr="{src:Vars.richSnippet.document.filetypeImage}">&nbsp;
+                                                By <span data-body="html(Vars.richSnippet.document.author)"></span>
+                                                &nbsp;-&nbsp;<span data-body="html(Vars.richSnippet.document.pageCount)"></span> pages
+                                                &nbsp;-&nbsp;<span data-body="html(Vars.richSnippet.document.viewCount)"></span> views
+                                                &nbsp;-&nbsp;last modified&nbsp;<span data-body="html(Vars.richSnippet.document.timeAgo)"></span>
+                                            </div>
+
+                                            <div data-if="Vars.richSnippet && Vars.richSnippet.action" class="gs-actions"
+                                                 data-body="render('action',richSnippet,{url:unescapedUrl,target:google.search.Search.LINK_TARGET_SELF})"></div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="cse"></div>
+
+                </div>
+
+        </div>
+
+        <div class="span4 columns">
+            <div id="sidebar">
+                
+                <div class="navigation">
+                    <br/>
+                        The Groovy programming language is supported by <a href="http://www.gopivotal.com" class="external-link">Pivotal</a> and the Groovy Community
+                    <a href="http://www.gopivotal.com" class="external-link">
+                        <img class="confluence-embedded-image image-center" src="http://docs.codehaus.org/download/attachments/1866/pivotal155px.png"/>
+                    </a> 
+
+                    <div class="section_1">
+                        <h1 id="Navigation-TrainingEvents">Training Events <a href="/Training+Events">...</a></h1>
+                        <div class='PivotalAdBannerDiv'></div>
+                        <script>
+                            (function() {
+                            var s = document.createElement('script');
+                            s.type = 'text/javascript';
+                            s.async = true;
+                            s.src = 'http://bserv.cfapps.io/gb/groovy.codehaus.org';
+                            var x = document.getElementsByTagName('script')[0];
+                            x.parentNode.insertBefore(s, x);
+                            })();
+                        </script>
+                    </div>
+
+                    <div class="section_1"><h1 id="Navigation-Information">Information</h1><ul class="alternate"><li><a href="/News">News</a></li><li><a href="/FAQ">FAQ</a></li><li><a href="/Roadmap">Roadmap</a></li><li><a href="/Eclipse+Plugin">Eclipse plugin</a></li></ul></div><div class="section_1"><h1 id="Navigation-Books...">Books&nbsp;<a href="/Books">...</a></h1><p><a href="http://www.manning.com/koenig2/" class="external-link"><img class="confluence-embedded-image" src="/download/attachments/1871/gina_cover.jpg?version=2&amp;modificationDate=1315509019302&amp;api=v2" data-image-src="/download/attachments/1871/gina_cover.jpg?version=2&amp;modificationDate=1315509019302&amp;api=v2"></img></a><br></br> <a href="http://www.amazon.com/gp/product/1932394842?ie=UTF8&amp;tag=httpgroovycan-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1932394842" class="external-link">buy at Amazon</a></p><p><a href="http://www.amazon.com/gp/product/1932394842?ie=UTF8&amp;tag=httpgroovycan-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1932394842" class="external-link"></a><a href="http://www.packtpub.com/groovy-2-cookbook/book" class="external-link"><img class="confluence-embedded-image confluence-thumbnail" width="126" src="/download/thumbnails/1871/9366OS_Cover.png?version=1&amp;modificationDate=1384940664040&amp;api=v2" data-image-src="/download/attachments/1871/9366OS_Cover.png?version=1&amp;modificationDate=1384940664040&amp;api=v2"></img></a></p><p><a href="http://www.amazon.com/Groovy-2-Cookbook-Andrey-Adamovich/dp/1849519366/ref=sr_1_1?ie=UTF8&amp;qid=1384940751&amp;sr=8-1&amp;keywords=groovy+2+cookbook" class="external-link">buy at Amazon</a></p><p><a href="https://www.packtpub.com/groovy-for-domain-specific-languages-dsl/book" style="font-size: 14.0px;line-height: 1.4285715;" class="external-link"><img class="confluence-embedded-image confluence-external-resource" src="https://www.packtpub.com/sites/default/files/imagecache/productview/6903_Groovy%20for%20Domain-Specific%20Languages_Front%20cover.jpg" data-image-src="https://www.packtpub.com/sites/default/files/imagecache/productview/6903_Groovy%20for%20Domain-Specific%20Languages_Front%20cover.jpg"></img></a>&nbsp;</p><p><a href="http://www.amazon.com/Groovy-Domain-Specific-Languages-Fergal-Dearle/dp/184719690X/" class="external-link">buy at Amazon</a></p></div><div class="section_1"><h1 id="Navigation-International">International</h1><ul class="alternate"><li><a href="/Chinese+Home">Chinese Home</a></li><li><a href="/Korean+Home">Korean Home</a></li><li><a href="/Portuguese+Home">Portuguese Home</a></li><li><a href="/Japanese+Home">Japanese Home</a></li></ul></div>
+
+                    <h1 class="headerstyle">Feeds</h1>
+                    <ul>
+                        <li><a class="rss"
+                               href="http://docs.codehaus.org/spaces/rss.action?key=GROOVY&amp;newPages=false">Site</a>
+                        </li>
+                        <li><a class="rss"
+                               href="http://docs.codehaus.org/spaces/blogrss.action?key=GROOVY">News</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-257558-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>
