@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.groovy.cookbook.intercept.TestIntercept" tests="1" skipped="0" failures="0" errors="0" timestamp="2015-03-22T01:26:58" hostname="studio" time="9.848">
+  <properties/>
+  <testcase name="methodIsIntercepted" classname="org.groovy.cookbook.intercept.TestIntercept" time="9.848"/>
+  <system-out><![CDATA[19:27:02.989 [Test worker] DEBUG o.g.c.intercept.PerformanceLogger - Execution time for method test: 4523ms.
+19:27:05.163 [Test worker] DEBUG o.g.c.intercept.PerformanceLogger - Execution time for method test: 2168ms.
+19:27:07.968 [Test worker] DEBUG o.g.c.intercept.PerformanceLogger - Execution time for method test: 2804ms.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

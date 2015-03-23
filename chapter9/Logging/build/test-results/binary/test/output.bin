@@ -1,0 +1,3 @@
+m19:27:02.989 [Test worker] DEBUG o.g.c.intercept.PerformanceLogger - Execution time for method test: 4523ms.
+m19:27:05.163 [Test worker] DEBUG o.g.c.intercept.PerformanceLogger - Execution time for method test: 2168ms.
+m19:27:07.968 [Test worker] DEBUG o.g.c.intercept.PerformanceLogger - Execution time for method test: 2804ms.
