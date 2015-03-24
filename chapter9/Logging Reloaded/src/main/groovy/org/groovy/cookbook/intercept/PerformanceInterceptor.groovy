@@ -3,7 +3,7 @@ package org.groovy.cookbook.intercept
 import groovy.util.logging.Slf4j
 
 @Slf4j
-class PerformanceLogger implements Interceptor {
+class PerformanceInterceptor implements Interceptor {
 
 	private Long start = 0
 
